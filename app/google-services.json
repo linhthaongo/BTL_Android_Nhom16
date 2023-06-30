@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "270563774573",
+    "project_id": "dangnhapbtl",
+    "storage_bucket": "dangnhapbtl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270563774573:android:011fee94c4569142aeaf64",
+        "android_client_info": {
+          "package_name": "com.trangchu.blt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270563774573-lohslqfq32unj3dqjc2r61q4amrg2l1o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9xFlDUOB4qzB95WEw2OfZxiSffunKKiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270563774573-lohslqfq32unj3dqjc2r61q4amrg2l1o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativel_DSAN"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".DanhSachDuAn">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/custom_danhsachduan" />
+
+    <EditText
+        android:id="@+id/edit_TimDuAN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/bgrcard"
+        android:drawableEnd="@drawable/baseline_search_24"
+        android:hint="@string/hint_timkiem"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textColorHint="@color/black"
+        tools:ignore="TextContrastCheck" />
+
+
+    <ListView
+        android:id="@+id/list_DuAn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_TimDuAN"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="60dp"
+        android:outlineProvider="none"
+        tools:listitem="@layout/dong_duan" />
+
+    <TextView
+        android:id="@+id/tvAnHien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Không có lớp trong danh sách"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/list_DuAn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal"
+        android:weightSum="3"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_ThemDuAn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bgrcard"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/iconthemduan"
+            app:backgroundTint="@color/green"
+            app:fabSize="mini"
+            tools:ignore="SpeakableTextPresentCheck,ImageContrastCheck" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btn_ThoatDSDA"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/bgrcard"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/iconquaylai"
+            app:backgroundTint="@color/red"
+            app:fabSize="mini"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linear_ThemPhong"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ThemPhong">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/background_load"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/edit_TaiKhoanDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/txt_themPhong"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"/>
+
+    </FrameLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayoutThemPhong"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="-20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_MaPhongThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/boderedit"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="@string/edit_MaPhongThem"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:scrollHorizontally="true" />
+
+        <EditText
+            android:id="@+id/edit_TenPhongThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boderedit"
+            android:drawableStart="@drawable/baseline_add_home_24"
+            android:drawablePadding="16dp"
+            android:ems="10"
+            android:hint="@string/edit_TenPhongthem"
+            android:inputType="textPersonName"
+            android:padding="12dp"
+            android:scrollHorizontally="true" />
+
+        <EditText
+            android:id="@+id/edit_MotaPhongThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/boderedit"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="@string/mota"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:maxLines="15"
+            android:padding="12dp"
+            android:scrollHorizontally="true" />
+
+        <LinearLayout
+           android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_LuuPhongThem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boderthongke"
+                android:text="@string/btn_LuuPhongThem"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_HuyPhongThem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boderthongke"
+                android:text="@string/btn_HuyPhongThem"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-90dp"
+            android:layout_marginBottom="100dp"
+            android:src="@drawable/boderthongke" />
+
+        <ImageView
+            android:id="@+id/circle2"
+            android:layout_width="182dp"
+            android:layout_height="182dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/boderthongke"
+            android:layout_marginLeft="280dp"/>
+
+    </LinearLayout>
+</LinearLayout>

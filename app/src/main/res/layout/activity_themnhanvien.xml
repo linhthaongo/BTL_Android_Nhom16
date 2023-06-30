@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativel_ThemNhanVien"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ThemNhanVien">
+    <FrameLayout
+        android:id="@+id/freamLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@color/background_load"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/edit_TaiKhoanDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/themNhanVien"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp"/>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/freamLayout"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/circle1"
+        android:layout_width="134dp"
+        android:layout_height="134dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-100dp"
+        android:layout_marginBottom="0dp"
+        android:src="@drawable/bgrcard" />
+    <ImageView
+        android:id="@+id/circle2"
+        android:layout_width="182dp"
+        android:layout_height="182dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="-100dp"
+        android:layout_marginBottom="-30dp"
+        android:src="@drawable/bgrcard" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_below="@+id/view5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="-20dp"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear_ThemNhanVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/img_AnhNV"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="7" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:weightSum="2">
+
+                    <Button
+                        android:id="@+id/btn_ThemAnhNV"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/boderthongke"
+                        android:text="@string/btn_ThemAnhNV"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/btn_ThemAnhCAM"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@drawable/boderthongke"
+                        android:text="@string/camera"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <EditText
+                android:id="@+id/edit_MaNhanVienThem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boderedit"
+                android:drawableStart="@drawable/baseline_lock_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="@string/edit_MaNhanVienThem"
+                android:inputType="textVisiblePassword"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/edit_TenNhanVienThem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boderedit"
+                android:drawableStart="@drawable/baseline_account_circle_24"
+                android:drawablePadding="16dp"
+                android:hint="@string/edit_TenNhanVienThem"
+                android:padding="12dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="10">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/edit_SDTThemGT"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="4.5"
+                        android:background="@drawable/boderedit"
+                        android:drawableStart="@drawable/baseline_account_circle_24"
+                        android:drawablePadding="16dp"
+                        android:hint="Giới tính"
+                        android:padding="12dp"
+                        android:scrollHorizontally="true"
+                        />
+
+                    <EditText
+                        android:id="@+id/edit_SDTThemNS"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="5.5"
+                        android:background="@drawable/boderedit"
+                        android:drawableStart="@drawable/baseline_calendar_month_24"
+                        android:drawablePadding="16dp"
+                        android:focusable="false"
+                        android:hint="Ngày sinh"
+                        android:padding="12dp"
+                        android:scrollHorizontally="true"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+            <EditText
+                android:id="@+id/edit_SDTThemNV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boderedit"
+                android:drawableStart="@drawable/baseline_phone_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="@string/soDienThoai"
+                android:padding="12dp"
+                android:scrollHorizontally="true" />
+
+            <EditText
+                android:id="@+id/edit_SDTThemEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boderedit"
+                android:drawableStart="@drawable/baseline_email_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="@string/hint_Email"
+                android:padding="12dp"
+                android:scrollHorizontally="true" />
+
+            <EditText
+                android:id="@+id/edit_DiaChiNV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/boderedit"
+                android:drawableStart="@drawable/baseline_add_location_24"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:hint="@string/edit_DiaChiNV"
+                android:inputType="textMultiLine"
+                android:padding="12dp"
+                android:scrollHorizontally="true" />
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/edtMaDuAn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderedit"
+                        android:drawableStart="@drawable/baseline_library_books_24"
+                        android:drawablePadding="16dp"
+                        android:hint="@string/maDuAn"
+                        android:padding="12dp"
+                        android:scrollHorizontally="true" />
+
+                    <EditText
+                        android:id="@+id/edtMaPhong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boderedit"
+                        android:drawableStart="@drawable/baseline_add_home_24"
+                        android:drawablePadding="16dp"
+                        android:hint="@string/maPhong"
+                        android:padding="12dp"
+                        android:scrollHorizontally="true" />
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/btn_ThemNV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boderthongke"
+                    android:text="@string/btn_ThemNV"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btn_HuyThemNV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/boderthongke"
+                    android:text="@string/btn_HuyThemNV"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

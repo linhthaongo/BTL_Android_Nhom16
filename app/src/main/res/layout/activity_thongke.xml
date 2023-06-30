@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout_SuaPhong"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ThongKe">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/topView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/background_load"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/edit_TaiKhoanDK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/thongKe"
+            android:textColor="@android:color/white"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="60dp"/>
+
+    </FrameLayout>
+    <View
+        android:id="@+id/view5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topView" />
+    <LinearLayout
+        android:id="@+id/linear_SuaPhong1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <Button
+                android:id="@+id/btn_ThongKeNV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/boderthongke"
+                android:text="@string/thongKe"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/thongKeNhanVien"
+                android:backgroundTint="@color/grey"
+                android:drawablePadding="16dp"
+                android:scrollHorizontally="true"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:focusable="false"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_ThongKeNV"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:backgroundTint="@color/grey"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <Button
+                android:id="@+id/btn_ThongKeDA"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/boderthongke"
+                android:text="@string/thongKe"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/thongKeDuAn"
+                android:backgroundTint="@color/grey"
+                android:drawablePadding="16dp"
+                android:scrollHorizontally="true"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:focusable="false"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_ThongKeDA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:backgroundTint="@color/grey"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+            <Button
+                android:id="@+id/btn_ThongKePhong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="3"
+                android:background="@drawable/boderthongke"
+                android:text="@string/thongKe"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_weight="7"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/thongKePhong"
+                android:backgroundTint="@color/grey"
+                android:drawablePadding="16dp"
+                android:scrollHorizontally="true"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:focusable="false"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_ThongKePhong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:inputType="textPersonName"
+                    android:backgroundTint="@color/grey"
+
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_QuaylaiTK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boderthongke"
+                android:text="@string/btn_HuyDuAn"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/circle1"
+            android:layout_width="134dp"
+            android:layout_height="134dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="-100dp"
+            android:layout_marginBottom="80dp"
+            android:src="@drawable/bgrcard" />
+
+        <ImageView
+            android:id="@+id/circle2"
+            android:layout_width="182dp"
+            android:layout_height="182dp"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/bgrxoa"
+            android:layout_marginLeft="300dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
